@@ -1,0 +1,28 @@
+<div class="toolbar" role="banner">
+    <div style="width: 200px;">
+      <span style="color: blue;font-weight: 600; font-size: 17px;margin-left: 20px;">MEGA</span>
+      <span style="color: rgb(211, 40, 40);font-style: oblique;margin-left: 3px;margin-top: 3px;">ZEK</span>
+    </div>
+    <ul style="align-items: center;cursor: pointer;display: flex;justify-content: space-around; list-style: none;    margin-top: revert;">
+        <li (click)="changeClass(1)" class="navbar_link" [ngClass]="{'navbar--active' :ngclass === 1}">
+          Trang chủ
+          <span class="scale-up-hor-center"></span>
+        </li>
+        <li (click)="changeClass(2)" class="navbar_link" [ngClass]="{'navbar--active' :ngclass === 2}">
+            Tài liệu
+            <span class="scale-up-hor-center"></span>
+          </li>
+        <li (click)="changeClass(3)" class="navbar_link" [ngClass]="{'navbar--active' :ngclass === 3}">
+            Liên hệ
+            <span class="scale-up-hor-center"></span>
+        </li>
+    </ul>
+    <div style="width: 200px;display: flex;justify-content: space-evenly;">
+      <span style="color: red;font-weight: 600; font-size: 17px;">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </span>
+      <span style="color: blue;font-weight: 600; font-size: 17px;">
+        <i class="fa-regular fa-user"></i>
+      </span>
+    </div>
+</div>
